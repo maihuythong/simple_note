@@ -9,7 +9,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
 import android.widget.Spinner;
 
 import androidx.annotation.NonNull;
@@ -29,24 +28,15 @@ import java.util.List;
 
 import static com.maihuythong.a1712800_simplenote.EditNoteActivity.NOTE_EXTRA_KEY;
 
-//import com.maihuythong.testchipsinput.NoteActionMode;
-
 public class MainActivity extends AppCompatActivity implements NoteEventListener, SearchView.OnQueryTextListener, SearchView.OnKeyListener{
 
     public static final String APP_PREFERENCES="notepad";
     private RecyclerView recyclerView;
     private ArrayList<Note> notes;
     private RecyclerViewAdapter adapter;
-   // private NoteActionMode noteActionMode;
-    private  int chooseNoteCount = 0;
     private NotesDao dao;
     private SearchView searchView;
-
     private FloatingActionButton fab;
-
-    private EditText noteTag;
-    private ChipGroup chipGroup;
-
     private Spinner spinner;
     private MenuItem itemSpinner;
     private String selectSearchItem;

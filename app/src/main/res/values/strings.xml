@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">1712800_Simple Note</string>
+    <string name="action_settings">Settings</string>
+    <string name="no_note_found">No Note Found!</string>
+
+    <string-array name="searchOption">
+        <item>Title</item>
+        <item>Tag</item>
+        <item>Content</item>
+    </string-array>
+</resources>
